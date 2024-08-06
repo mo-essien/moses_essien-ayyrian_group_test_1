@@ -1,6 +1,16 @@
 # AyyrianGroupTest1
 
+By Moses Essien,
+I used JSONplaceholder as my API, the table as request in the test fetches posts the JSONplaceholder's posts endpoint.
+The API URL is defined in the development environment variables.
+I chose to use CSS over SCSS as more developers understand CSS than SCSS.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.3.
+
+
+
+
+
 
 ## Development server
 

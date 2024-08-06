@@ -1,0 +1,27 @@
+<div id="home">
+  <div class="intro">
+    <div class="main">{{title}}</div>
+    <div class="sub">by Moses Essien</div>
+  </div>
+
+  <div class="table-container">
+    <table [cellSpacing]="0">
+      <thead>
+        <tr>
+          <th (click)="sortTable('id')" title="click to sort by id">ID</th>
+          <th (click)="sortTable('userId')" title="click to sort by user id">USER ID</th>
+          <th (click)="sortTable('title')" title="click to sort by title" class="title">TITLE</th>
+          <th (click)="sortTable('body')" title="click to sort by body" class="body">BODY</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let post of posts">
+          <td>{{ post.id }}</td>
+          <td>{{ post.userId }}</td>
+          <td>{{ post.title }}</td>
+          <td>{{ post.body }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

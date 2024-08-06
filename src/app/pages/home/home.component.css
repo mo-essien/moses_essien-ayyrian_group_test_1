@@ -1,0 +1,66 @@
+#home {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+
+.intro {
+  margin-block: 1rem;
+  margin-inline: auto;
+  text-align: center;
+}
+.intro .main {
+  font-size: 1.125rem;
+}
+.intro .sub {
+  color: rgb(36, 80, 201);
+  font-weight: 750;
+}
+
+.table-container {
+  flex-grow: 1;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table-container * {
+  text-align: left;
+}
+
+.table-container table {
+  min-height: fit-content;
+  max-height: 100%;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.table-container th,
+.table-container td {
+  padding: 1rem;
+}
+
+.table-container thead {
+  position: sticky;
+  top: 0;
+}
+.table-container th {
+  background: rgb(41, 39, 54);
+  color: rgb(203, 217, 255);
+  cursor: pointer;
+  font-weight: 625;
+  white-space: nowrap;
+}
+.table-container th.title,
+.table-container th.body {
+  min-width: 250px;
+}
+
+.table-container tbody tr {
+  vertical-align: top;
+}
+.table-container tbody tr:nth-child(even) {
+  background: rgba(0, 68, 255, 0.063);
+}
